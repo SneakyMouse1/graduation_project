@@ -1,0 +1,21 @@
+{
+  "name": "graduation_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "watch": "webpack --watch --mode=development",
+    "start": "webpack serve --mode=development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SneakyMouse1/graduation_project.git"
+  },
+  "author": "Simon Smyslov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SneakyMouse1/graduation_project/issues"
+  },
+  "homepage": "https://github.com/SneakyMouse1/graduation_project#readme"
+}
