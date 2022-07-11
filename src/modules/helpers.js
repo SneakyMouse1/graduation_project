@@ -13,8 +13,7 @@ export const animate = ({
 
 		// Calculate actual animation status
 		let progress = timing(timeFraction);
-        
-        // Rendering
+    	// Rendering
 		draw(progress); 
 
 		if (timeFraction < 1) {
@@ -23,3 +22,5 @@ export const animate = ({
 
 	});
 };
+
+export default animate;
