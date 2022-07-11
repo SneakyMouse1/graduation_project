@@ -16,7 +16,17 @@
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/timer */ \"./modules/timer.js\");\n\n\n(0,_modules_timer__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\"15 july 2022\");\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/timer */ \"./modules/timer.js\");\n/* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/scroll */ \"./modules/scroll.js\");\n\n\n\n(0,_modules_timer__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\"15 july 2022\");\n(0,_modules_scroll__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack:///./index.js?");
+
+/***/ }),
+
+/***/ "./modules/scroll.js":
+/*!***************************!*\
+  !*** ./modules/scroll.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"scroll\": () => (/* binding */ scroll)\n/* harmony export */ });\nconst scroll = () => {\n\tconst scrollBtn = document.querySelector('.smooth-scroll');\n\tscrollBtn.style.display = 'none';\n\n\tconst trackScroll = () => {\n\t\tconst scrolled = window.pageYOffset;\n\t\tconst coords = document.documentElement.clientHeight;\n\n\t\tif (scrolled > coords) {\n\t\t\tscrollBtn.style.display = 'block';\n\t\t}\n\t\tif (scrolled < coords) {\n\t\t\tscrollBtn.style.display = 'none';\n\t\t}\n\n\t};\n\n\tconst backToTop = () => {\n\t\tconst header = document.getElementById('header');\n\t\tif (header) {\n\t\t\theader.scrollIntoView({\n\t\t\t\tbehavior: 'smooth',\n\t\t\t\tblock: 'start',\n\t\t\t\tinline: 'center'\n\t\t\t});\n\t\t} else {\n\t\t\tdocument.body.scrollIntoView({\n\t\t\t\tbehavior: 'smooth',\n\t\t\t\tblock: 'start',\n\t\t\t\tinline: 'center'\n\t\t\t});\n\t\t}\n\t};\n\twindow.addEventListener('scroll', trackScroll);\n\tscrollBtn.addEventListener('click', backToTop);\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scroll);\n\n//# sourceURL=webpack:///./modules/scroll.js?");
 
 /***/ }),
 
