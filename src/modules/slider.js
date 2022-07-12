@@ -25,6 +25,8 @@ export const slider = () => {
           }
       });
   };
+
+
   const classMoverCards = () => {
       document.addEventListener('click', (e) => {
           if (e.target.closest('.services__arrow--right')) {
@@ -40,6 +42,8 @@ export const slider = () => {
       classMoverBenefitItems();
       classMoverCards();
   }
+
+
   const classSwitcher = (item) => {
       item.forEach(item => {
           if (item.classList.contains('not-active')) {
@@ -78,6 +82,9 @@ export const slider = () => {
               item.classList.add('not-active');
           }
       });
+
+
+
       if (window.innerWidth < 576) {
           benefitsContent.addEventListener('click', (e) => {
               prevSlide(benefitItems, currentSlide, 'not-active');
@@ -95,6 +102,9 @@ export const slider = () => {
               
               nextSlide(benefitItems, currentSlide, 'not-active');
           });
+
+
+          
           servicesArrows.addEventListener('click', (e) => {
               prevSlide(cards, currentSlide, 'not-active');
 
