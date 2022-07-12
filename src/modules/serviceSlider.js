@@ -6,18 +6,18 @@ export const serviceSlider = () => {
     let currentSlide = 0;
     let interval;
   
-    //переключение на следующий слайд
+    // Next slide
     const prevSlide = (elems, index) => {
       elems[index].style.display = "none";
       elems[index + 1].style.display = "none";
     };
-    //переключение на предыдущий слайд
+    // Previous slide
     const nextSlide = (elems, index) => {
       elems[index].style.display = "block";
       elems[index + 1].style.display = "block";
     };
   
-    // автоматическое переключение слайдов и пагинации
+    // Automatica slide changes
     const autoSlide = () => {
       prevSlide(slides, currentSlide);
   
@@ -28,7 +28,7 @@ export const serviceSlider = () => {
       nextSlide(slides, currentSlide, "active");
     };
   
-    //запуск автоматического переключения
+    // Start ASC
     const startSlide = (timer = 2000) => {
       interval = setInterval(autoSlide, timer);
     };
@@ -36,7 +36,7 @@ export const serviceSlider = () => {
       clearInterval(interval);
     };
   
-    //переключение по кнопкам
+    // Change onclick
     sliderBlock.addEventListener("click", (e) => {
       e.preventDefault();
   
@@ -51,7 +51,7 @@ export const serviceSlider = () => {
         currentSlide -= -2;
       }
   
-      //проверка счетчика и длины массива со слайдами
+      // Check calc and arr length
       if (currentSlide >= slides.length) {
         currentSlide = 0;
       }
