@@ -26,7 +26,7 @@ export const lightbox= () => {
             imgDocument.style.left = '50%';
             imgDocument.style.zIndex = '9999';
             imgDocument.style.transform = 'translate(-50%, -50%)';    
-            imgDocument.style.maxHeight = '95%';
+            imgDocument.style.maxHeight = '65%';
             clone.style.display = 'block';
 
             modalBlock.addEventListener('click', () => {
