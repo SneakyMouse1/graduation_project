@@ -72,6 +72,7 @@ export const slider = () => {
                       item.classList.add('not-active');
                   }
               }
+              // четность\нечетность
                   
           } else if (i > 0) {
               item.classList.add('not-active');
