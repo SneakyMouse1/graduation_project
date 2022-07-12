@@ -72,7 +72,6 @@ export const slider = () => {
                       item.classList.add('not-active');
                   }
               }
-              //проверка на четность\нечетность
                   
           } else if (i > 0) {
               item.classList.add('not-active');
