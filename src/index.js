@@ -5,13 +5,15 @@ import modal from "./modules/modal";
 import lightbox from "./modules/lightbox";
 import validate from "./modules/validate";
 import sendForm from "./modules/sendForm";
-
+import slider from "./modules/slider";
+import swiper from "./modules/swiper";
 timer("21 july 2022 12:00");
 scroll();
 calculate(1000);
 modal();
 lightbox();
-
+slider();
+swiper();
 validate();
 sendForm({
     formId: "form1",
