@@ -15,8 +15,13 @@ export const lightbox= () => {
             
             const imgDocument = document.createElement('img');
             imgDocument.setAttribute('src', href);
-            
+
             body.append(modalBlock);
+
+            modalBlock.innerHTML = `
+            <span title="Close" class="header-modal__close">x</span>
+            `;
+        
             modalBlock.append(imgDocument);
             modalBlock.append(clone);
 
@@ -28,6 +33,7 @@ export const lightbox= () => {
             imgDocument.style.transform = 'translate(-50%, -50%)';    
             imgDocument.style.maxHeight = '65%';
             clone.style.display = 'block';
+
 
             modalBlock.addEventListener('click', () => {
                 modalBlock.innerHTML = '';

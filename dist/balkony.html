@@ -14,7 +14,13 @@
 	<link href="fonts/font.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
+	<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
 	<script src="./js/main.js" defer></script>
+
 	<title>Остекление балконов и лоджий</title>
 	<meta name="keywords" content="остекление, алюминиевое, балконы, лоджии, застеклить, пластиковые, балконы, пвх, цена, утепление, отделка, акции">
 	<meta name="description" content="Установим балконы на балкон и лоджию из пластикового (пвх) или алюминиевого (al) профиля. Утепление и отделка под ключ! Отличные цены и акции!">
@@ -89,7 +95,7 @@
 							<div class="phone"><a href="tel:89876543210">+7 (987) <span class="text-normal">654-32-10</span></a></div>
 						</div>
 						<div class="col-sm-12 col-lg-6">
-							<div class="button"><a href="#callback" class="btn btn-warning btn-block fancyboxModal"><i class="phone-icon"></i> Заказать звонок!</a></div>
+							<div class="button"><a href="#callback" class="btn btn-warning btn-block fancyboxModal header-btn"><i class="phone-icon"></i> Заказать звонок!</a></div>
 						</div>
 					</div>
 				</div>	
@@ -164,7 +170,7 @@
 				<div class="col-md-12 col-md-6">
 					<div class="form-group">
 						<label for="calc-input" class="text-warning">Площадь (м&sup2;)</label>
-						<input name="calc-input" type="number" class="form-control" id="calc-input" placeholder="Площадь (м&sup2;)">
+						<input name="calc-input"  class="form-control" id="calc-input" placeholder="Площадь (м&sup2;)">
 					  </div>
 				</div>
 				<div class="col-md-12 col-md-6">
@@ -177,44 +183,52 @@
     	</div>
     </div>
     <div id="benefits" class="section">
-    	<div class="container">
+    	<div class="container ">
     		<div class="section-title">
     			<div class="heading-image"><i class="benefit-ico"></i></div>
     			<h2 class="heading"><span>Выгоды</span> для клиентов</h2>
     		</div>
-    		<div class="benefits-inner">
-				<div class="benefits-wrap">
-					<div class="benefits__item">
+    		<div class="benefits-inner ">
+				<div class="benefits-wrap ">
+					<div class="swiper">
+					<div class="swiper-wrapper">
+					<div class="benefits__item swiper-slide">
 						<p class="benefit-image">
 								<img src="images/benefits/4.png" alt="">
 							</p>
 							<p class="benefit-title">Рассрочка без банка </p>
 					</div>
-					<div class="benefits__item">
+					<div class="benefits__item swiper-slide">
 						<p class="benefit-image"><img src="images/benefits/2.png" alt=""></p>
 						<p class="benefit-title">Гарантии от 3 до 10 лет</p>
 					</div>
-					<div class="benefits__item">
+					<div class="benefits__item swiper-slide">
 						<p class="benefit-image"><img src="images/benefits/3.png" alt=""></p>
 						<p class="benefit-title">Индивидуальный подход</p>
 					</div>
-					<div class="benefits__item">
+					<div class="benefits__item swiper-slide">
 						<p class="benefit-image"><img src="images/benefits/1.png" alt=""></p>
 						<p class="benefit-title">Бесплатные консультации</p>
 					</div>
-					<div class="benefits__item">
+					<div class="benefits__item swiper-slide">
 						<p class="benefit-image"><img src="images/benefits/5.png" alt=""></p>
 						<p class="benefit-title">Бесплатный выезд мастера на дом</p>
 					</div>
-					<div class="benefits__item">
+					<div class="benefits__item swiper-slide">
 						<p class="benefit-image"><img src="images/benefits/6.png" alt=""></p>
 						<p class="benefit-title">Окна от лучших производителей</p>
 					</div>
+					
+				</div>
+				
 				</div>
     			
+			
+			  </div>
     			</div>
+				</div>
 				<div class="benefits-arrows">
-					<div class="benefits__arrow benefits__arrow--left">
+					<div class="benefits__arrow benefits__arrow--left ">
 						<img src="images/benefits/left-arrow.svg" alt="">
 					</div>
 					<div class="benefits__arrow benefits__arrow--right">
@@ -229,9 +243,11 @@
     			<div class="heading-image"><i class="service-ico"></i></div>
     			<h2 class="heading white">Наши <span>услуги</span></h2>
     		</div>
-    		<div class="row">
-	    		<div class="col-md-12 col-lg-6">
-	    			<div class="service-block">
+    <div class="row " style="overflow: hidden;">
+					
+						<div class="swiper-wrapper"  >
+	    		<div class="col-md-12 col-lg-6 swiper-slide" >
+	    			<div class="service-block ">
 	    				<div class="service-image">
 	    					<img src="images/services/1.jpg" alt="">
 	    					<a href="images/services/original/hot/1.jpg" data-fancybox-group="fancybox-thumb-1" class="fancybox-thumb services-image_overlay"><span>Смотреть работы</span></a>
@@ -275,8 +291,8 @@
 	    				</div>
 	    			</div>
 	    		</div>
-	    		<div class="col-md-12 col-lg-6">
-	    			<div class="service-block">
+	    		<div class="col-md-12 col-lg-6 swiper-slide">
+	    			<div class="service-block ">
 	    				<div class="service-image">
 	    					<img src="images/services/2.jpg" alt="">
 	    					<a href="images/services/original/loggia/1.jpg" class="fancybox-thumb services-image_overlay" data-fancybox-group="fancybox-thumb-2"><span>Смотреть работы</span></a>
@@ -316,8 +332,8 @@
 	    				</div>
 	    			</div>
 	    		</div>
-	    		<div class="col-md-12 col-lg-6">
-	    			<div class="service-block">
+	    		<div class="col-md-12 col-lg-6 swiper-slide">
+	    			<div class="service-block ">
 	    				<div class="service-image">
 	    					<img src="images/services/3.jpg" alt="">
 	    					<a href="images/services/original/cold/1.jpg" class="fancybox-thumb services-image_overlay" data-fancybox-group="fancybox-thumb-3"><span>Смотреть работы</span></a>
@@ -362,8 +378,8 @@
 	    				</div>
 	    			</div>
 	    		</div>
-	    		<div class="col-md-12 col-lg-6">
-	    			<div class="service-block">
+	    		<div class="col-md-12 col-lg-6 swiper-slide">
+	    			<div class="service-block ">
 	    				<div class="service-image">
 	    					<img src="images/services/4.jpg" alt="">
 	    					<a href="images/services/original/balcony/1.jpg" class="fancybox-thumb services-image_overlay" data-fancybox-group="fancybox-thumb-4"><span>Смотреть работы</span></a>
@@ -426,6 +442,7 @@
 	    					<div class="service-button"><a href="#application" data-subject="Балконы" class="btn btn-success btn-sm fancyboxModal">Вызвать замерщика</a></div>
 	    				</div>
 	    			</div>
+						</div>
 	    		</div>
 					<div class="services-arrows">
 					<div class="services__arrow services__arrow--left">
@@ -435,8 +452,9 @@
 						<img src="images/benefits/right-arrow.svg" alt="">
 					</div>
 				</div>	
-    		</div>
+    		</div></div>
     	</div>
+			</div>
     </div>
     <div id="order_1" class="order">
     	<div class="container">
@@ -448,10 +466,10 @@
     					<div class="countdown" data-days="7">
 							<div class="countdown-text">До конца акции осталось:
 								<div class="count-wrap">
-									<div class="count count_1">Дней:</br> <span>01</span></div>
-									<div class="count count_2">Часов:</br> <span>02</span></div>
-									<div class="count count_3">Минут:</br> <span>03</span></div>
-									<div class="count count_4">Секунд:</br> <span>04</span></div>
+												<div class="count count_1"><span id="days" style="font-size: 14px">Дней:</span></br> <span id="timer-days">01</span></div>
+									<div class="count count_2"><span id="hours"style="font-size: 14px">Часов:</span></br> <span id="timer-hours" >02</span></div>
+									<div class="count count_3"><span id="minutes"style="font-size: 14px">Минут:</span></br> <span id="timer-minutes">03</span></div>
+									<div class="count count_4"><span id="seconds"style="font-size: 14px">Секунд:</span></br> <span id="timer-seconds">04</span></div>
 								</div>
 							</div>
 						</div>
@@ -460,7 +478,7 @@
     					<div class="order-form rf">
     						<h3 class="order-form-heading">Оставить заявку</h3>
     						<div class="order-form-subheading">на получение скидки 20%</div>
-    						<form name="action-form" class="form-horizontal">
+    						<form name="action-form" id="form1" class="form-horizontal">
     							<div class="form-group">
     								<div class="col-sm-12">
     									<input type="text" name="fio" class="form-control required" placeholder="ваше имя">
@@ -648,7 +666,7 @@
     					<div class="order-form rf">
     						<h3 class="order-form-heading">Оставить заявку</h3>
     						<div class="order-form-subheading">на получение скидки 20%</div>
-    						<form name="action-form2" class="form-horizontal">
+    						<form name="action-form2" id="form2"class="form-horizontal">
     							<div class="form-group">
     								<div class="col-sm-12">
     									<input type="text" name="fio" class="form-control required" placeholder="ваше имя">
@@ -764,7 +782,7 @@
         </div>
         <div class="box-modal_body rf">
             <p class="text-center">Оставьте, пожалуйста, заявку. Мы позвоним Вам в ближайшее время и ответим на все вопросы!</p>
-            <form name="callback-form">
+            <form name="callback-form" id="form3">
                 <div class="form-group">
                     <input type="text" name="fio" class="form-control required" placeholder="Ваше имя*">
                 </div>
@@ -787,7 +805,7 @@
         </div>
         <div class="box-modal_body rf">
             <p class="text-center">Оставьте, пожалуйста, заявку и мы свяжемся с Вами, чтобы рассказать детали акции и Вашу скидку!</p>
-            <form name="order-form">
+            <form name="order-form" id="form4">
                 <div class="form-group">
                     <input type="text" name="fio" class="form-control required" placeholder="Ваше имя*">
                 </div>
@@ -810,7 +828,7 @@
         </div>
         <div class="box-modal_body rf">
             <p class="text-center">Оставьте заявку и специалист свяжется с Вами в ближайшее время!</p>
-            <form name="application-form">
+            <form name="application-form" id="form5">
                 <div class="form-group">
                     <input type="text" name="fio" class="form-control required" placeholder="Ваше имя*">
                 </div>
@@ -851,7 +869,7 @@
         </div>
         <div class="box-modal_body rf">
             <p class="text-center">Оставьте, пожалуйста, заявку. Мы позвоним Вам в ближайшее время и ответим на все вопросы!</p>
-            <form name="callback-form">
+            <form name="callback-form" id="form6">
                 <div class="form-group">
                     <input type="text" name="fio" class="form-control required" placeholder="Ваше имя*">
                 </div>
@@ -877,7 +895,7 @@
 			</div>
 			<div class="box-modal_body rf">
 				<p class="text-center">Оставьте заявку и специалист свяжется с Вами в ближайшее время!</p>
-				<form name="application-form">
+				<form name="application-form" id="form7">
 					<div class="form-group">
 						<input type="text" name="fio" class="form-control required" placeholder="Ваше имя*">
 					</div>
@@ -901,4 +919,5 @@
 	</div>
     
 </body>
+
 </html>

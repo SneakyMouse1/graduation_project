@@ -23,6 +23,7 @@
    "webpack-dev-server": "^4.9.2"
  },
  "dependencies": {
-   "jshint": "^2.13.4"
+   "jshint": "^2.13.4",
+   "swiper": "^8.3.1"
  }
 }
