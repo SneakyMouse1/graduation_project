@@ -2,7 +2,7 @@ import Swiper, { Autoplay, Navigation } from "swiper";
 
 Swiper.use([Autoplay, Navigation]);
 
-const slider = () => {
+const sliderService = () => {
   const swiper2 = new Swiper(".row", {
     // Optional parameters
     slidesPerView: 1,
@@ -43,4 +43,4 @@ const slider = () => {
   });
 };
 
-export default slider;
+export default sliderService;
