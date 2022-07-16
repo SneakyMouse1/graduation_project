@@ -17,19 +17,19 @@ export const lightbox= () => {
             imgDocument.setAttribute('src', href);
 
             body.append(modalBlock);
-
             modalBlock.innerHTML = `
             <span title="Close" class="header-modal__close">x</span>
             `;
-        
+
             modalBlock.append(imgDocument);
+            
             modalBlock.append(clone);
 
             imgDocument.style.display = 'block';
             imgDocument.style.position = 'fixed';
             imgDocument.style.top = '50%';
             imgDocument.style.left = '50%';
-            imgDocument.style.zIndex = '9999';
+            imgDocument.style.zIndex = '9';
             imgDocument.style.transform = 'translate(-50%, -50%)';    
             imgDocument.style.maxHeight = '65%';
             clone.style.display = 'block';

@@ -1555,9 +1555,10 @@ input.error {
 }
 
 .header-modal__close {
-  position: absolute;
-  top: 5px;
-  right: 5px;
+  position: fixed;
+  z-index: 99;
+  top: 20%;
+  right: 40%;
   font-size: 36px;
   cursor: pointer;
 }
@@ -1676,5 +1677,17 @@ input.error {
   .benefits-wrap {
     width: 100%;
     max-width: 576px;
+  }
+  
+}
+
+@media (max-width: 575px) {
+  .header-modal__close {
+    position: fixed;
+    z-index: 99;
+    top: 20%;
+    right: 10%;
+    font-size: 36px;
+    cursor: pointer;
   }
 }
