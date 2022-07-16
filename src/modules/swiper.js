@@ -20,26 +20,31 @@ const swiper = () => {
       prevEl: ".benefits__arrow--left",
     },
     breakpoints: {
+      300: {
+        slidesPerView: 1,
+      },
       320: {
         slidesPerView: 1,
         spaceBetween: 30,
-        
       },
       425: {
-        slidesPerView: 1,
-        spaceBetween: 80,
+        slidesPerView: 1
       },
       576: {
         slidesPerView: 1,
         spaceBetween: 40,
       },
-      768: {
+      580: {
         slidesPerView: 3,
         spaceBetween: 40,
       },
-      1024: {
+      768: {
         slidesPerView: 3,
         spaceBetween: 50,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 60,
       },
     },
   });
