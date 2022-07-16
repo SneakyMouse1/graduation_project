@@ -1683,11 +1683,6 @@ input.error {
 
 @media (max-width: 575px) {
   .header-modal__close {
-    position: fixed;
-    z-index: 99;
-    top: 20%;
     right: 10%;
-    font-size: 36px;
-    cursor: pointer;
   }
 }
