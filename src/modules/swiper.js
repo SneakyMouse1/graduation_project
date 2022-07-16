@@ -3,9 +3,9 @@ import Swiper, { Autoplay, Navigation } from "swiper";
 Swiper.use([Autoplay, Navigation]);
 
 const swiper = () => {
-  const swiper = new Swiper(".swiper", {
+  const swiper = new Swiper(".benefitSwiper", {
     // Optional parameters
-    slidesPerView: 1,
+    slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
     initialSlide: 1,
