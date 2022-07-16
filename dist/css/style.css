@@ -1666,6 +1666,14 @@ input.error {
   transform: rotate(90deg);
 }
 
+.swiper-slide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
 @media (min-width: 576px) {
   .benefits-wrap {
     width: 100%;
